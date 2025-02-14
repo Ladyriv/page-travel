@@ -5,6 +5,7 @@ Desarrollo de una web, aplicando React js, tailwind y node js
 # Ejecución del proyecto
 ## Instalación
 `git clone https://github.com/Ladyriv/page-travel.git`
+
 `cd tu-repositorio`
 
 ## Instalar dependencias
@@ -34,7 +35,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
 ## Tecnologías
 
@@ -44,7 +44,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://page-travel.vercel.app/
 
 ## Deploy on Vercel
 
