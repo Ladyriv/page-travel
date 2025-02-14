@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube, FaEnvelope, FaPhoneAlt, 
 
 function Footer() {
   return (
-    <footer className="bg-white text-gray-900 py-10 px-6">
+    <footer className="bg-white text-gray-900 py-10 px-6 mt-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
         
         {/* Logo y redes sociales */}
@@ -11,7 +11,9 @@ function Footer() {
           <img src="/logo.png" alt="All in Travels" className="w-48" />
           <div className="flex gap-4 mt-4">
             
-            <a href="#" className="text-gray-900 text-2xl hover:text-yellow-600"><img src ="/src/assets/img/logs/logos_redes.png" /></a>
+            <a href="#" className="text-gray-900 text-2xl hover:text-yellow-600">
+              <img src ="/src/assets/img/logs/logos_redes.png" />
+            </a>
           </div>
         </div>
 
