@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -9,10 +9,9 @@ function Footer() {
         {/* Logo y redes sociales */}
         <div className="flex flex-col items-center md:items-start">
           <img src="/logo.png" alt="All in Travels" className="w-48" />
-          <div className="flex gap-4 mt-4">
-            
+          <div className="flex gap-4 mt-4">            
             <a href="#" className="text-gray-900 text-2xl hover:text-yellow-600">
-              <img src ="/src/assets/img/logs/logos_redes.png" />
+              <img src ="../../assets/img/logs/logos_redes.png" />
             </a>
           </div>
         </div>
