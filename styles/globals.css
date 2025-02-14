@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 @layer base {
@@ -10,6 +12,13 @@
     html {
         font-family: 'Monserrat', sans-serif;
     }
+    h1 {
+        @apply text-black;
+    }
+    h2 {
+        @apply text-3xl text-center font-Monserrat mb-4;
+    }
+    
 }
 
 @font-face {
@@ -33,4 +42,19 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+}
+
+.max-width {
+    @apply max-w-[1440px] mx-auto;
+}
+.padding-y {
+    @apply py-4;
+}
+  
+.flex-center {
+    @apply flex items-center justify-center;
+}
+  
+.flex-between {
+    @apply flex justify-between items-center;
 }

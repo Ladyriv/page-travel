@@ -22,11 +22,7 @@ export const Navbar = () => {
           <div className="container mx-auto flex justify-between items-center p-6">
             {/* Logo */}
             <a href="#inicio" className="text-xl font-bold">
-              <img
-                src="/logo.png"
-                alt="Logo"
-                className="h-5 w-auto"
-              />
+              <img src="/logo.png" alt="Logo" className="h-5 w-auto" />
             </a>
 
             {/* Menú Desktop */}
@@ -81,7 +77,11 @@ export const Navbar = () => {
 
           {/* Menú Móvil */}
           {isOpen && (
-            <div className={`absolute top-16 left-0 w-full bg-black/80 p-6 text-center transition-transform transform ${isOpen ? "translate-y-0" : "-translate-y-full"} md:hidden`}>
+            <div
+              className={`absolute top-16 left-0 w-full bg-black/80 p-6 text-center transition-transform transform ${
+                isOpen ? "translate-y-0" : "-translate-y-full"
+              } md:hidden`}
+            >
               <ul className="flex flex-col space-y-4 list-none">
                 <li>
                   <a
@@ -128,33 +128,37 @@ export const Navbar = () => {
           )}
         </nav>
         <div className="flex flex-col items-center justify-center flex-grow text-white text-center">
-          <h1 className="text-center text-5xl md:text-7xl font-bold">THE TRAVEL</h1>
-          <p className="text-xl md:text-3xl tracking-widest">
-            EXPERIENCE
-          </p>
+          <h1 className="text-center text-5xl md:text-7xl font-bold">
+            THE TRAVEL
+          </h1>
+          <p className="text-xl md:text-3xl tracking-widest">EXPERIENCE</p>
         </div>
 
         {/* Tarjetas de Navegación */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto mb-10 w-8/12">
-          {[
-            { title: "Viajes grupales", img: viajesGrupales },
-            { title: "Viajes a la medida", img: viajesMedida },
-            { title: "Destinos para parejas", img: viajesPareja },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-full h-56 object-cover transition-transform group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <p className="text-white text-lg font-semibold">{item.title}</p>
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:flex md:justify-center lg:grid-cols-3 md:gap-5">
+            {[
+              { title: "Viajes grupales", img: viajesGrupales },
+              { title: "Viajes a la medida", img: viajesMedida },
+              { title: "Destinos para parejas", img: viajesPareja },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg w-full md:w-1/3"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <p className="text-white text-lg font-semibold">
+                    {item.title}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </header>
     );

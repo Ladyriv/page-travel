@@ -1,4 +1,4 @@
-import imag from '../src/img/blogs_3.png';
+//import imag from '../src/img/blogs_3.png';
 import './App.css';
 import About from './components/Home/About';
 import Blogs from './components/Home/Blogs';
