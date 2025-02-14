@@ -10,9 +10,9 @@ module.exports = {
       extend: {
         scrollBehavior: ["smooth"],
         fontFamily: {
-          custom: ['Monserrat', 'sans-serif'],
-          customMonserratBold: ['MonserratBold', 'sans-serif'],
-          customMonserratMed: ['MonserratMed', 'sans-serif']
+          monserrat: ['Monserrat', 'sans-serif'],
+          monserratBold: ['monserratBold', 'sans-serif'],
+          monserratMed: ['monserratMed', 'sans-serif']
         },
         colors: {
           "primaryWhite": {

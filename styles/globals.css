@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import url('/src/assets/fonts/Montserrat-Medium.ttf');
+@import url('/src/assets/fonts/Montserrat-Bold.ttf');
+
 
 @tailwind base;
 @tailwind components;
@@ -16,13 +19,13 @@
         @apply text-black;
     }
     h2 {
-        @apply text-3xl text-center font-Monserrat mb-4;
+        @apply text-3xl text-center font-monserrat mb-4;
     }
     
 }
 
 @font-face {
-    font-family: 'MonserratBold';
+    font-family: 'monserratBold';
     src: url('/src/assets/fonts/Montserrat-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -31,7 +34,7 @@
 
 
 @font-face {
-    font-family: 'MonserratMed';
+    font-family: 'monserratMed';
     src: url('/src/assets/fonts/Montserrat-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
